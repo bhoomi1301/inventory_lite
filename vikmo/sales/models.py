@@ -64,7 +64,7 @@ class Order(TimeStampedModel):
     ]
 
     dealer = models.ForeignKey(Dealer, on_delete=models.PROTECT, related_name='orders')
-    order_number = models.CharField(max_length=32, unique=True, blank=True)
+    order_number = models.CharField(max_length=32, unique=True, blank=True, null=True)
     status = models.CharField(max_length=16, choices=STATUS_CHOICES, default=STATUS_DRAFT)
     total_amount = models.DecimalField(max_digits=12, decimal_places=2, default=Decimal('0.00'))
     confirmed_at = models.DateTimeField(null=True, blank=True)
