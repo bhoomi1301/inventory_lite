@@ -1,0 +1,6 @@
+body{font-family: Arial, sans-serif; margin: 20px}
+.container header{display:flex; justify-content:space-between; align-items:center}
+nav button{margin-right:8px}
+table{width:100%; border-collapse:collapse}
+td, th{border:1px solid #ddd; padding:8px}
+.line{margin-top:8px; display:flex; gap:8px; align-items:center}
